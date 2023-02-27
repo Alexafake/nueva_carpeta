@@ -1,0 +1,135 @@
+/*importa reglas desde otras hojas de estilo, es dedir enlaza a otras paginas  de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@700&display=swap');
+/*aqui esta llamando la imagen de superfil, se le esta dando un ancho de 89%
+  y se definio el ancho maximo de un 300px...*/
+ .perfil-img{
+    width: 89%;
+    max-width: 300px;
+ } 
+/*esta llamando la etiqueta img y y section para luego darle 
+posicion relativa, cambia la posicion del elemento fuera de su 
+posicion  ormal...*/
+ .perfil-img-section{
+    position: relative;
+ }
+ /*aqui le esta dando  color una altura de 15px, posicion absoluta 
+ la cual hace que el elemento se coloque junto asu contenedor 
+ posicionado, un ancho de 100%, una pocision especifica que 
+ en este caso sera a la izquierda un 0%, añadio un boton 
+ el cual cambia el boton del texto...*/
+ .perfil-img-line{
+    background-color: var(--secundary-color);
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+ }
+ /*le da posicion ccentrado al texto...*/
+ .perfil{
+    text-align: center;
+ }
+/* le da propiedades al titulo como: tamaño de fuente 40px, 
+peso de fuente especifica el grosor de la letra, le agrego margen 
+en sus cuatrolados de 0, color var, y cambio el tipo de letra...*/
+ .titulo{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color:var(--primary-color);
+    font-family: 'Noto Sans',sans-serif;
+ }
+ /*agrego tamaño de fuente 18px, le cambio el grosor de la letra 
+ a un 500, definio la altura de cada linea que forma el contenido 
+ del texto,determino la anchura del texto con un 450px y una 
+ margen de 20px auto...*/
+ .texto-perfil{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    min-width: 450px;
+    margin: 20px auto;
+ }
+ /*agregamos las propiedades de color en el fondo, color al texto
+ border none que es el encargado de el grosor de todos los 
+ elementos, paddin El relleno de un elemento es el 
+ espacio entre su contenido y su borde, cursor es el que permite 
+ seleccionar un puntero entre los elementos disponibles...*/
+ .Perfil-btn{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 20px;
+    padding:0.5em 1em ;
+    border-radius: 7px;
+    cursor: pointer;
+ }
+ /*aqui se utilizo la pripiedad filter con 130%, que es la encargada de cambiar 
+ el color al momento de pasar el cursor por la letra del buscador...*/
+ .Perfil-btn:hover{
+    filter: brightness(130%);
+
+ }
+ /*el margin bottom es utilizado para establecer espacio en la
+  parte inferior del elemento...*/
+ .perfil-info{
+    margin-bottom: 25px;
+ }
+ /*se usa con vistas al dia en que los navegadores sean capaces
+  de mostrar los contenidos para tipos espcíficos de 
+  dispositivos como ordenadores de bolsillo, digitalizadores 
+  texto-a-voz...*/ 
+ @media(min-width:950px){
+    .perfil-img{
+        width: 89%;
+        max-width: 300px;
+     }
+    
+     .perfil-img-section{
+        position: relative;
+     }
+     .perfil-img-line{
+        background-color: var(--secundary-color);
+        height: 15px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    
+     }
+     .perfil{
+        text-align: center;
+     }
+    
+     .titulo{
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+        color:var(--primary-color);
+        font-family: 'Noto Sans',sans-serif;
+     }
+     .texto-perfil{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.3;
+        min-width: 450px;
+        margin: 20px auto;
+     }
+     .Perfil-btn{
+        background-color: var(--primary-color);
+        color: var(--text-color-inverse);
+        border: none;
+        font-size: 20px;
+        padding:0.5em 1em ;
+        border-radius: 7px;
+        cursor: pointer;
+     }
+     .Perfil-btn:hover{
+        filter: brightness(130%);
+    
+     }
+     .perfil-info{
+        margin-bottom: 25px;
+     }
+ }
